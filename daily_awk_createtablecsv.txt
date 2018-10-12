@@ -1,0 +1,10 @@
+create external table if not exists daily_awk_csv (
+recorddate string,
+open string,
+high string,
+low string,
+close string,
+volume string
+)
+STORED AS avro
+location '/tmp/alphavantage/csv';

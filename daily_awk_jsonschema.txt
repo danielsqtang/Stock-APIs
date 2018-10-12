@@ -1,0 +1,30 @@
+{
+   "$schema": "schema.daily_awk",
+   "title": "daily_awk",
+   "description": "AWK stock prices daily",
+   "type": "object",
+	
+   "properties": {
+	
+      "timestamp": {
+         "type": "string"
+      },
+      "open": {
+         "type": "string"
+      },
+      "high": {
+         "type": "string"
+      },
+	  "low": {
+         "type": "string"
+      },
+      "close": {
+         "type": "string"
+      },
+      "volume": {
+         "type": "string"
+      }
+   },
+	
+   "required": ["timestamp"]
+}

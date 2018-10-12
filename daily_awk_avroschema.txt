@@ -1,0 +1,13 @@
+{
+   "namespace": "AlphaVantage",
+   "type": "record",
+   "name": "schema.daily_awk",
+   "fields": [
+{"name":"timestamp","type":["string","null"]},
+{"name":"open","type":["string","null"]},
+{"name":"high","type":["string","null"]},
+{"name":"low","type":["string","null"]},
+{"name":"close","type":["string","null"]},
+{"name":"volume","type":["string","null"]}
+   ]
+}
