@@ -1,0 +1,13 @@
+https://api.iextrading.com/1.0
+
+
+
+https://api.iextrading.com/1.0/ref-data/symbols
+
+
+https://api.iextrading.com/1.0/stock/market/batch?symbols=${stock_symbols}&types=chart
+
+
+
+https://api.iextrading.com/1.0/stock/market/batch?symbols=awk,aapl,tsla,fb&types=chart
+						/stock/market/batch?symbols=aapl,fb,tsla&types=quote,news,chart&range=1m&last=5

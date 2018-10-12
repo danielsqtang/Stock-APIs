@@ -1,0 +1,17 @@
+{ 
+"type" : "record", 
+"name" : "schema.daily_awk", 
+"fields" : [ 
+{"name":"recorddate","type":["string","null"]},
+{"name":"open","type":["string","null"]},
+{"name":"high","type":["string","null"]},
+{"name":"low","type":["string","null"]},
+{"name":"close","type":["string","null"]},
+{"name":"volume","type":["string","null"]},
+{"name":"unadjustedVolume","type":["string","null"]},
+{"name":"change","type":["string","null"]},
+{"name":"changePercent","type":["string","null"]},
+{"name":"vwap","type":["string","null"]},
+{"name":"label","type":["string","null"]},
+{"name":"changeOverTime","type":["string","null"]}]
+}

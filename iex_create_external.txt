@@ -1,0 +1,58 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS iex_chart (
+AWK STRUCT<
+	chart:ARRAY<STRUCT<
+		date:STRING, 
+		open:DOUBLE, 
+		high:DOUBLE, 
+		low:UNIONTYPE<DOUBLE, INT>, 
+		close:DOUBLE, 
+		volume:INT, 
+		unadjustedVolume:INT, 
+		change:DOUBLE, 
+		changePercent:DOUBLE, 
+		vwap:DOUBLE, 
+		label:STRING, 
+		changeOverTime:UNIONTYPE<INT, DOUBLE>>>>, 
+AAPL STRUCT<
+	chart:ARRAY<STRUCT<
+		date:STRING, 
+		open:UNIONTYPE<INT, DOUBLE>, 
+		high:UNIONTYPE<DOUBLE, INT>, 
+		low:DOUBLE, 
+		close:DOUBLE, 
+		volume:INT, 
+		unadjustedVolume:INT, 
+		change:DOUBLE, 
+		changePercent:DOUBLE, 
+		vwap:DOUBLE, 
+		label:STRING, 
+		changeOverTime:UNIONTYPE<INT, DOUBLE>>>>, 
+TSLA STRUCT<
+	chart:ARRAY<STRUCT<
+		date:STRING, 
+		open:UNIONTYPE<DOUBLE, INT>, 
+		high:UNIONTYPE<DOUBLE, INT>, 
+		low:UNIONTYPE<DOUBLE, INT>, 
+		close:DOUBLE,
+		volume:INT, 
+		unadjustedVolume:INT, 
+		change:UNIONTYPE<DOUBLE, INT>, 
+		changePercent:DOUBLE, 
+		vwap:DOUBLE, 
+		label:STRING, 
+		changeOverTime:UNIONTYPE<INT, DOUBLE>>>>, 
+FB STRUCT<
+	chart:ARRAY<STRUCT<
+		date:STRING, 
+		open:DOUBLE, 
+		high:UNIONTYPE<DOUBLE, INT>, 
+		low:DOUBLE, 
+		close:UNIONTYPE<DOUBLE, INT>, 
+		volume:INT, 
+		unadjustedVolume:INT, 
+		change:DOUBLE, 
+		changePercent:DOUBLE, 
+		vwap:DOUBLE, 
+		abel:STRING, 
+		changeOverTime:UNIONTYPE<INT, DOUBLE>>>>) 
+STORED AS ORC
